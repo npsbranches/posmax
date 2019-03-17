@@ -2,13 +2,10 @@
  **  Прелоадер
  */
 
-function ready() {
+
+window.onload = function() {
     $('.preloader').fadeOut();
 }
-document.addEventListener("DOMContentLoaded", ready);
-
-
-
 
 
 

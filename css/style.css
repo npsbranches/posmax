@@ -1419,6 +1419,7 @@ ul.pagination li a:hover:not(.active) {
     height: 15px;
     border: 2px solid #C8CCD4;
     border-radius: 3px;
+    z-index: 55;
 }
 
 .label-cbx .checkbox svg {

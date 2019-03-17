@@ -7,8 +7,6 @@ window.onload = function() {
     $('.preloader').fadeOut();
 }
 
-
-
 /*
  ** Меню
  */

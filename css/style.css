@@ -1615,7 +1615,20 @@ ul.pagination li a:hover:not(.active) {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA (MAX-WIDTH: 992px) * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+
 @media screen and (max-width: 992px) {
+    .footer .wrapper {
+        flex-wrap: wrap;
+        padding-left: 100px;
+    }
+
+    .footer-column:first-child {
+        flex-basis: 100%;
+    }
+    .footer-column {
+        flex-basis: 50%;
+        margin-bottom: 25px;
+    }
     .services-card {
         -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
@@ -1711,9 +1724,13 @@ ul.pagination li a:hover:not(.active) {
         display: block;
     }
 
+    .header.sticky .logo-on-menu {
+        display: none;
+    }
     .logo-on-menu {
         display: none;
     }
+
     body.overflow-hidden {
         overflow: hidden;
     }
@@ -1884,20 +1901,6 @@ ul.pagination li a:hover:not(.active) {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA (MAX-WIDTH: 576px) * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-@media screen and (max-width: 992px) {
-    .footer .wrapper {
-        flex-wrap: wrap;
-        padding-left: 100px;
-    }
-
-    .footer-column:first-child {
-        flex-basis: 100%;
-    }
-    .footer-column {
-        flex-basis: 50%;
-        margin-bottom: 25px;
-    }
-}
 
 
 @media screen and (max-width: 600px) {

@@ -5,6 +5,7 @@
 
 window.onload = function() {
     $('.preloader').fadeOut();
+    $('body').css('overflow', 'visible');
 }
 
 /*

@@ -15,7 +15,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    
+
 }
 
 html,
@@ -96,6 +96,7 @@ iframe {
     height: 100%;
     object-fit: contain;
 }
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .wrapper {
@@ -1332,18 +1333,18 @@ iframe {
     z-index: 15;
 }
 
-ul.pagination {
+.pagination {
     display: inline-block;
     padding: 0;
     margin: 15px;
     margin-top: 30px;
 }
 
-ul.pagination li {
+.pagination li {
     display: inline;
 }
 
-ul.pagination li a {
+.pagination li a {
     color: #515769;
     float: left;
     padding: 8px 16px;
@@ -1353,17 +1354,17 @@ ul.pagination li a {
     border-right: none;
 }
 
-ul.pagination li:last-child a {
+.pagination li:last-child a {
     border-right: 1px solid #ddd;
 }
 
-ul.pagination li a.active {
+.pagination li a.active {
     background-color: #0075E9;
     border: 1px solid #0075E9;
     color: white;
 }
 
-ul.pagination li a:hover:not(.active) {
+.pagination li a:hover:not(.active) {
     background-color: #ddd;
 }
 
@@ -1586,7 +1587,7 @@ ul.pagination li a:hover:not(.active) {
 }
 
 .product-info dl {
-  width: 100%;
+    width: 100%;
 }
 
 .product-info dt {
@@ -1646,10 +1647,12 @@ ul.pagination li a:hover:not(.active) {
     .footer-column:first-child {
         flex-basis: 100%;
     }
+
     .footer-column {
         flex-basis: 50%;
         margin-bottom: 25px;
     }
+
     .services-card {
         -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
@@ -1702,7 +1705,7 @@ ul.pagination li a:hover:not(.active) {
         z-index: 20;
     }
 
-    
+
 
     .catalog-products {
         -ms-flex-preferred-size: 100%;
@@ -1711,12 +1714,17 @@ ul.pagination li a:hover:not(.active) {
     }
 
     .catalog-button {
-       display: block;
+        display: block;
     }
 
     .catalog-product {
         -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -1748,6 +1756,7 @@ ul.pagination li a:hover:not(.active) {
     .header.sticky .menu ul {
         justify-content: center;
     }
+
     .logo-on-menu {
         display: none;
     }
@@ -1931,11 +1940,13 @@ ul.pagination li a:hover:not(.active) {
         flex-wrap: nowrap;
         flex-direction: column;
     }
+
     .footer-column {
         flex-basis: 100%;
         padding-right: 150px;
     }
 }
+
 @media screen and (max-width: 576px) {
 
     .footer .wrapper {
@@ -1946,6 +1957,7 @@ ul.pagination li a:hover:not(.active) {
     .footer-column {
         padding-right: 0;
     }
+
     .about-company p {
         text-align: left;
     }
@@ -2022,52 +2034,9 @@ ul.pagination li a:hover:not(.active) {
         margin-right: 10px;
     }
 
-    .class {
-        padding-top: 0;
-    }
-
-    .class-icon {
-        margin-bottom: 30px;
-    }
-
-    .class ul li {
-        font-size: 14px;
-        list-style-image: url('../images/checked-small.png');
-    }
-
-    .pages-footer {
-        padding: 50px 0;
-        height: unset;
-    }
-
-    .pages-footer .wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        text-align: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    .pages-footer-menu {
-        margin: 50px 0;
-    }
-
-    .pages-footer-text {
-        margin: auto;
-        text-align: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .pages-footer-address p {
-        text-align: center;
+    
+    .pagination li a {
+        padding: 6px 12px;
     }
 
     .catalog-product {
@@ -2088,6 +2057,13 @@ ul.pagination li a:hover:not(.active) {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA (MAX-WIDTH: 375px) * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 375px) {
+    .pagination {
+        margin: 0;
+        margin-top: 30px;
+    }
+    .pagination li a {
+        padding: 4px 10px;
+    }
     .counter-card {
         padding: 0 10px;
     }

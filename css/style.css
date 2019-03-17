@@ -1350,6 +1350,7 @@ ul.pagination li a:hover:not(.active) {
     flex-direction: column;
     padding: 20px;
     border-bottom: 1px solid #e4e4e4;
+    background: #fff;
 }
 
 .catalog-filters h3 {
@@ -1372,19 +1373,13 @@ ul.pagination li a:hover:not(.active) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    background: #fff;
 }
 
 .filters-buttons button {
     margin: 0 5px;
     color: #515769;
 }
-
-
-
-
-
-
-
 
 .label-cbx {
     user-select: none;
@@ -1682,9 +1677,7 @@ ul.pagination li a:hover:not(.active) {
         z-index: 20;
     }
 
-    .catalog-sidebar * {
-        background: #fff;
-    }
+    
 
     .catalog-products {
         -ms-flex-preferred-size: 100%;
@@ -1728,23 +1721,29 @@ ul.pagination li a:hover:not(.active) {
     .header.sticky .logo-on-menu {
         display: none;
     }
+
+    .header.sticky .menu ul {
+        justify-content: center;
+    }
     .logo-on-menu {
         display: none;
     }
 
     body.overflow-hidden {
+        height: 100vh;
         overflow: hidden;
     }
+
     body.padding {
         padding-top: 0;
     }
 
     .menu {
         position: fixed;
-        top: 75px;
+        top: 74px;
         background: #0c4c8b;
         z-index: 5;
-        height: calc(100% - 75px);
+        height: calc(100% - 74px);
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%);

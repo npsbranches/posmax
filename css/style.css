@@ -1324,7 +1324,7 @@ iframe {
 .sidebar-layout.visible {
     position: fixed;
     height: 100%;
-    width: 100%;
+    width: 200%;
     top: 0;
     left: 0;
     bottom: 0;

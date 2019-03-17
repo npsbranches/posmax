@@ -103,7 +103,6 @@ if ($(".company-statistics").length) {
                 thousandSeparator: "",
                 duration: 4000
             });
-
             show = false;
         }
     });
@@ -115,7 +114,11 @@ if ($(".company-statistics").length) {
 
 $('.catalog-button').click(function () {
     $('.catalog-sidebar').toggleClass('open');
-    $('.catalog-content').toggleClass('opacity');
+    $('.sidebar-layout').toggleClass('visible');
+});
+$('.sidebar-layout').click(function () {
+    $('.catalog-sidebar').toggleClass('open');
+    $('.sidebar-layout').toggleClass('visible');
 })
 
 $('.callback-btn').click(function () {

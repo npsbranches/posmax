@@ -1,3 +1,14 @@
+/* 
+    z-index priorities:
+        .preloader            - 9999
+        .header               - 30
+        .catalog-sidebar      - 20
+        .callback-form        - 15
+        .sidebar-layout       - 15  
+        .menu                 - 5
+        .invisible            - -1
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -1188,7 +1199,6 @@ iframe {
 }
 
 .catalog-menu ul li a:hover {
-    background: #0c4c8b;
     background: #0075E9;
     color: #fff;
 }
@@ -1283,7 +1293,7 @@ iframe {
 .catalog-button {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    background: #0c4c8b;
+    background: #0075E9;
     width: 100%;
     padding: 15px;
     text-align: center;
@@ -1291,18 +1301,12 @@ iframe {
     text-transform: uppercase;
     margin-top: 15px;
     display: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
 .catalog-button i {
-    font-size: 22px;
+    font-size: 16px;
     margin-right: 10px;
 }
 
@@ -1316,6 +1320,17 @@ iframe {
     transform: translateX(0);
 }
 
+.sidebar-layout.visible {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 0.9;
+    z-index: 15;
+}
 
 ul.pagination {
     display: inline-block;
@@ -1359,7 +1374,7 @@ ul.pagination li a:hover:not(.active) {
     margin-top: 20px;
 }
 
-.filters-block {
+.filter-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1384,7 +1399,7 @@ ul.pagination li a:hover:not(.active) {
     color: #515769;
 }
 
-.filters-buttons {
+.filter-buttons {
     padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1395,36 +1410,34 @@ ul.pagination li a:hover:not(.active) {
     background: #fff;
 }
 
-.filters-buttons button {
+.filter-buttons button {
     margin: 0 5px;
     color: #515769;
 }
 
-.label-cbx {
+.filter-checkbox {
     user-select: none;
     cursor: pointer;
     margin-bottom: 0;
 }
 
-.label-cbx input:checked+.checkbox {
-    border-color: #0e5aa7;
+.filter-checkbox input:checked+div {
     border-color: #0075E9;
 }
 
-.label-cbx input:checked+.checkbox svg path {
-    fill: #0e5aa7;
+.filter-checkbox input:checked+div svg path {
     fill: #0075E9;
 }
 
-.label-cbx input:checked+.checkbox svg polyline {
+.filter-checkbox input:checked+div svg polyline {
     stroke-dashoffset: 0;
 }
 
-.label-cbx:hover .checkbox svg path {
+.filter-checkbox:hover div svg path {
     stroke-dashoffset: 0;
 }
 
-.label-cbx .checkbox {
+.filter-checkbox div {
     position: relative;
     top: 2px;
     float: left;
@@ -1433,18 +1446,16 @@ ul.pagination li a:hover:not(.active) {
     height: 15px;
     border: 2px solid #C8CCD4;
     border-radius: 3px;
-    z-index: 55;
 }
 
-.label-cbx .checkbox svg {
+.filter-checkbox div svg {
     position: absolute;
     top: -2px;
     left: -2px;
 }
 
-.label-cbx .checkbox svg path {
+.filter-checkbox div svg path {
     fill: none;
-    stroke: #0e5aa7;
     stroke: #0075E9;
     stroke-width: 2;
     stroke-linecap: round;
@@ -1454,7 +1465,7 @@ ul.pagination li a:hover:not(.active) {
     transition: all 0.6s ease;
 }
 
-.label-cbx .checkbox svg polyline {
+.filter-checkbox div svg polyline {
     fill: none;
     stroke: #FFF;
     stroke-width: 2;
@@ -1465,12 +1476,10 @@ ul.pagination li a:hover:not(.active) {
     transition: all 0.3s ease;
 }
 
-.label-cbx>span {
+.filter-checkbox>span {
     pointer-events: none;
     vertical-align: middle;
 }
-
-
 
 .invisible {
     position: absolute;
@@ -1479,9 +1488,6 @@ ul.pagination li a:hover:not(.active) {
     height: 0;
     opacity: 0;
 }
-
-
-
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * SINGLE PRODUCT PAGE * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -1705,9 +1711,7 @@ ul.pagination li a:hover:not(.active) {
     }
 
     .catalog-button {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+       display: block;
     }
 
     .catalog-product {

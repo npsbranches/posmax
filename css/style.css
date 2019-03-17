@@ -13,6 +13,10 @@ body {
     color: #515769;
 }
 
+body.padding {
+    padding-top: 170px;
+}
+
 a {
     text-decoration: none;
 }
@@ -1707,6 +1711,9 @@ ul.pagination li a:hover:not(.active) {
     }
     body.overflow-hidden {
         overflow: hidden;
+    }
+    body.padding {
+        padding-top: 0;
     }
 
     .menu {

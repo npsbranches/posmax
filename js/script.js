@@ -18,13 +18,15 @@ $('.btn-bars').click(function () {
 
 $(window).scroll(function () {
     var the_top = $(document).scrollTop();
-    if (the_top > 100) {
+    if (the_top > 114) {
         $('.header').addClass('sticky');
         $('.logo-on-menu').addClass('visible');
+        $('body').addClass('padding');
 
     } else {
         $('.header').removeClass('sticky');
         $('.logo-on-menu').removeClass('visible');
+        $('body').removeClass('padding');
     }
 });
 

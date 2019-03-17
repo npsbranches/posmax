@@ -510,12 +510,14 @@ iframe {
     color: #515769;
     /* text-transform: uppercase;  */
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .about-company p {
     font-size: 20px;
     font-weight: 300;
     color: #515769;
+    text-align: center;
 }
 
 .about-company p span {
@@ -531,18 +533,21 @@ iframe {
 .about-company-qualities .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .quality-card {
-    flex-basis: 33%;
+    width: 300px;
     /* background: #fff; */
-    padding: 50px;
-    margin: 1px;
+    /* padding: 50px; */
+    /* margin: 1px; */
+    /* padding-right: 15px; */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     min-height: 230px;
+    padding: 25px;
+    text-align: center !important;
     cursor: pointer;
 }
 
@@ -1813,11 +1818,6 @@ ul.pagination li a:hover:not(.active) {
         flex-direction: column;
     }
 
-
-    .pages-footer-menu {
-        margin-left: 30px;
-    }
-
     .catalog-product {
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -1886,13 +1886,46 @@ ul.pagination li a:hover:not(.active) {
 
 @media screen and (max-width: 992px) {
     .footer .wrapper {
-        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 100px;
+    }
+
+    .footer-column:first-child {
+        flex-basis: 100%;
+    }
+    .footer-column {
+        flex-basis: 50%;
+        margin-bottom: 25px;
     }
 }
 
+
+@media screen and (max-width: 600px) {
+    .footer .wrapper {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .footer-column {
+        flex-basis: 100%;
+        padding-right: 150px;
+    }
+}
 @media screen and (max-width: 576px) {
+
+    .footer .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer-column {
+        padding-right: 0;
+    }
     .about-company p {
         text-align: left;
+    }
+
+    .about-company-qualities p {
+        text-align: center;
     }
 
     .blue-block h2 {
@@ -1942,9 +1975,6 @@ ul.pagination li a:hover:not(.active) {
         margin-bottom: 40px;
     }
 
-    .footer .wrapper {
-        height: 300px;
-    }
 
     .footer-text {
         -webkit-box-orient: vertical;

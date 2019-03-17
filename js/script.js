@@ -2,9 +2,15 @@
  **  Прелоадер
  */
 
-$(document).ready(function () {
-    $('.preloader').fadeOut(500);
-});
+function ready() {
+    $('.preloader').fadeOut();
+}
+document.addEventListener("DOMContentLoaded", ready);
+
+
+
+
+
 
 /*
  ** Меню
@@ -44,9 +50,7 @@ $('.home-slider').slick({
     rows: 0,
     autoplay: true,
     autoplaySpeed: 2000,
-    // customPaging : function(slider, i) {
-    //     return '<a href=""><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o home-slider-dot-active" aria-hidden="true"></i></a>';
-    // },
+
 });
 
 /*
@@ -60,10 +64,9 @@ $('.clients .wrapper').slick({
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-   
+
     autoplaySpeed: 2000,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 768,
             settings: {
                 slidesToShow: 3,
@@ -81,7 +84,7 @@ $('.clients .wrapper').slick({
                 slidesToShow: 1,
             }
         },
-]
+    ]
 });
 
 /*

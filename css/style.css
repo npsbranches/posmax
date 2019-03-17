@@ -5,6 +5,7 @@
         .catalog-sidebar      - 20
         .callback-form        - 15
         .sidebar-layout       - 15  
+        .header .wrapper      - 6
         .menu                 - 5
         .invisible            - -1
 */
@@ -1771,12 +1772,17 @@ iframe {
         padding-top: 0;
     }
 
+    .header .wrapper {
+        position: relative;
+        z-index: 6;
+    }
     .menu {
         position: fixed;
-        top: 74px;
+        top: -100px;
+        bottom: -100px;
         background: #0c4c8b;
         z-index: 5;
-        height: calc(100% - 74px);
+        height: calc(100% + 200px);
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%);

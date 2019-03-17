@@ -1533,6 +1533,7 @@ iframe {
     background-position: center;
     background-size: cover;
     padding: 20px;
+    max-width: 320px;
 }
 
 .product-type h3 {
@@ -1729,6 +1730,10 @@ iframe {
         justify-content: center;
     }
 
+    .catalog-content.single {
+        margin-left: 0;
+    }
+
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA (MAX-WIDTH: 800px) * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -1746,6 +1751,24 @@ iframe {
         display: none;
     }
 
+    .product-info dl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-info dt {
+        white-space: normal;
+    }
+    
+    .product-info dt,
+    .product-info dd {
+        font-size: 12px;
+    }
+
+    .product-info dt:after {
+        content: '';
+        display: none;
+    }
 
     .btn-bars {
         display: block;
@@ -1776,6 +1799,7 @@ iframe {
         position: relative;
         z-index: 6;
     }
+
     .menu {
         position: fixed;
         top: -100px;

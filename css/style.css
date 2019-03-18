@@ -1921,8 +1921,9 @@ iframe {
 
     .header-socials {
         margin-top: 50px;
+        
     }
-    
+
     .menu.active {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);

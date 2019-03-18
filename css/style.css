@@ -1044,8 +1044,6 @@ iframe {
     margin-bottom: 20px;
     max-width: 320px;
 }
-
-
 .footer-contacts a {
     font-size: 16px;
     color: #fff;
@@ -1119,7 +1117,6 @@ iframe {
     min-width: 40px;
 }
 
-
 .contacts-text a,
 .contacts-text span {
     display: -webkit-box;
@@ -1164,10 +1161,6 @@ iframe {
     padding: 50px 0;
 }
 
-.catalog .wrapper {
-    /* padding: 0; */
-}
-
 .breadcrumbs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1200,8 +1193,6 @@ iframe {
     font-size: 14px;
     color: gray;
 }
-
-
 
 .catalog h2 {
     font-size: 30px;
@@ -1237,11 +1228,8 @@ iframe {
 }
 
 .catalog-menu h3 {
-    background: #0c4c8b;
     background: #0075E9;
-    /* background: lightgray; */
     color: #fff;
-    /* color: #515769; */
     font-size: 16px;
     font-weight: 400;
     padding: 0 20px;
@@ -1633,7 +1621,6 @@ iframe {
 
 .product-info {
     padding: 20px;
-    /* border: 1px solid #e4e4e4; */
 }
 
 .product-info h3 {
@@ -1649,7 +1636,6 @@ iframe {
 
 .product-description {
     padding: 20px;
-    /* border: 1px solid #e4e4e4; */
     margin-bottom: 20px;
 }
 
@@ -1785,8 +1771,6 @@ iframe {
         height: 100%;
         z-index: 20;
     }
-
-
 
     .catalog-products {
         -ms-flex-preferred-size: 100%;
@@ -2058,8 +2042,6 @@ iframe {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA (MAX-WIDTH: 576px) * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-
-
 @media screen and (max-width: 600px) {
     .footer .wrapper {
         -ms-flex-wrap: nowrap;
@@ -2116,7 +2098,6 @@ iframe {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-
     }
 
     .counter-card span {

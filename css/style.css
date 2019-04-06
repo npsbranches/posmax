@@ -1741,6 +1741,71 @@ iframe {
     padding-left: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER SEARCH * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.header-search form {
+    display: flex;
+    padding: 5px 15px;
+    border-bottom: 2px solid #fff;
+}
+
+.header-search input {
+    color: #fff;
+}
+
+.header-search input::placeholder {
+    color: #fff;
+}
+
+.header-search i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-search input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+.header-search input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+.header-search input[type="search"]::-webkit-search-decoration,
+.header-search input[type="search"]::-webkit-search-cancel-button,
+.header-search input[type="search"]::-webkit-search-results-button,
+.header-search input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA (MAX-WIDTH: 1280px) * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 1280px) {
@@ -1976,9 +2041,21 @@ iframe {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
+        align-items: center; /* NEW*/
+    }
+
+    .header-socials {
+        margin: 30px auto;
+    }
+
+    .header-socials a {
+        margin-left: 0;
+        margin: 0 10px;
+    }
+
+    .header-search {
+        margin: 50px 0;
+    order: -1;
     }
 
     .menu ul li {

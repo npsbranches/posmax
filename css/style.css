@@ -1955,6 +1955,15 @@ iframe {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA (MAX-WIDTH: 768px) * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 768px) {
+
+    .header-languages {
+        margin-right: 0;
+        order: -5;
+    }
+
+    .header-languages a {
+        font-size: 16px;
+    }
     .header-text {
         display: none;
     }

@@ -394,6 +394,20 @@ iframe {
     display: none;
 }
 
+.header-languages {
+    display: flex;
+    margin-right: 15px;
+}
+
+.header-languages a {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.header-languages a.active {
+    font-weight: 700;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER -> MENU * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .logo-on-menu {
